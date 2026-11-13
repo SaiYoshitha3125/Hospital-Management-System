@@ -29,6 +29,7 @@ import {
   deletePatientHistoryItem,
   type PatientHistoryItem,
 } from '@/lib/hospitalData';
+import yoshithaAvatar from '@/assets/yoshitha-avatar.svg';
 
 const statusColors: Record<string, string> = {
   'Active': 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400',
@@ -171,8 +172,12 @@ const MedicalProfile: React.FC = () => {
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-blue-600 p-8 mb-8 text-white shadow-xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
           <div className="relative flex flex-col md:flex-row items-center md:items-start gap-6">
-            <div className="w-20 h-20 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center shrink-0">
-              <span className="text-3xl font-black">{(profile.name || 'P')[0]}</span>
+            <div className="w-24 h-24 rounded-3xl overflow-hidden border-2 border-white/50 shadow-2xl bg-white/10 backdrop-blur shrink-0 ring-4 ring-white/20">
+              <img
+                src={yoshithaAvatar}
+                alt={profile.name || "Yoshitha"}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="text-center md:text-left">
               <h1 className="text-2xl md:text-3xl font-black">{profile.name}</h1>

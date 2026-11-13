@@ -188,7 +188,7 @@ clinic-dash-demo-main/
 │   └── requirements.txt            # Python dependencies
 │
 ├── src/                            # React Frontend Application
-│   ├── assets/                     # Logos, illustrations & visiting cards
+│   ├── assets/                     # Logos, illustrations & avatars
 │   ├── components/                 # Reusable UI & Widget Components
 │   │   ├── ui/                     # Radix UI components (dialog, select, input, etc.)
 │   │   ├── Navbar.tsx              # Navigation bar with consult dropdown & auth
@@ -338,7 +338,7 @@ You can experience **100% of the platform immediately** without even starting th
 1. Open the frontend at `http://localhost:8080/`
 2. Click **Login** in the top navigation bar.
 3. Click either:
-   - **👤 Patient Demo**: Logs in as *Alex Johnson* with pre-loaded vitals, chronic asthma/hypertension history, severe penicillin allergy alert, and past consultations.
+   - **👤 Patient Demo**: Logs in as *Yoshitha* with pre-loaded vitals, chronic asthma/hypertension history, severe penicillin allergy alert, and past consultations.
    - **🩺 Doctor Demo**: Logs in as *Dr. Sarah Jenkins* (MD, FACP) with physician permissions.
 4. Try out:
    - **⚡ Instant VC**: Go to `/vc-appointment`, pick a symptom, run the device check, join the live call, and receive a digital prescription.

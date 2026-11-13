@@ -93,8 +93,8 @@ export const consultationApi = {
             const samples = [
                 {
                     id: 991,
-                    patient_name: 'Alex Johnson',
-                    age: 29,
+                    patient_name: 'Yoshitha',
+                    age: 24,
                     symptoms: 'Mild throat scratchiness, slight dry cough for 2 days',
                     duration: '10 mins',
                     doctor_advice: 'Advised saline gargles 3x daily, stay hydrated, Cetirizine 10mg at bedtime if allergy persists.',
@@ -104,11 +104,11 @@ export const consultationApi = {
                 },
                 {
                     id: 992,
-                    patient_name: 'Alex Johnson',
-                    age: 29,
-                    symptoms: 'Routine cardiovascular follow-up & BP review',
+                    patient_name: 'Yoshitha',
+                    age: 24,
+                    symptoms: 'Routine wellness assessment & allergy review',
                     duration: '20 mins',
-                    doctor_advice: 'Blood pressure stable at 122/80 mmHg. Maintain current medication dosage and routine daily walks.',
+                    doctor_advice: 'Vitals stable. Continue seasonal allergy precautions and maintain balanced hydration.',
                     notes: 'Mode: In-Person Clinic Visit | Doctor: Dr. Rajesh Sharma | Slot: Confirmed',
                     status: 'confirmed',
                     created_at: new Date(Date.now() - 86400000 * 5).toISOString()
@@ -199,22 +199,22 @@ export const profileApi = {
             }
             // Return comprehensive default profile
             return {
-                name: 'Alex Johnson',
-                age: 29,
-                gender: 'male',
-                height: 178,
-                weight: 72,
-                blood_group: 'O+',
+                name: 'Yoshitha',
+                age: 24,
+                gender: 'female',
+                height: 165,
+                weight: 56,
+                blood_group: 'B+',
                 symptoms: 'Mild intermittent seasonal allergies and screen eyestrain',
-                existing_diseases: 'Controlled Bronchial Asthma, Mild Essential Hypertension',
-                medications: 'Amlodipine 5mg (daily morning), Salbutamol Inhaler (SOS)',
-                emergency_contact: '+1 (555) 349-2810 (Spouse: Emily Johnson)',
-                address: '742 Evergreen Terrace, Springfield, OR 97477',
-                medical_history: 'Diagnosed with mild asthma in 2021. Well-controlled with rescue inhaler. Stage 1 hypertension managed since 2023.',
-                allergies: 'Penicillin (Severe: Anaphylaxis/Urticaria), Peanuts (Moderate: Oral pruritus), Pollen (Mild)',
-                lifestyle: 'Non-smoker, Social wine drinker (1 glass/week), Cardio running 3x weekly, 7.5 hrs sleep',
-                surgeries: 'Laparoscopic Appendectomy (2019, City Hospital)',
-                family_history: 'Father: Type 2 Diabetes (age 52); Mother: Hypertension; Grandfather: CAD',
+                existing_diseases: 'Mild Seasonal Bronchial Asthma (Controlled)',
+                medications: 'Salbutamol Inhaler 100mcg (SOS for wheezing)',
+                emergency_contact: '+1 (555) 349-2810 (Family: S. Rao)',
+                address: '742 Park Avenue, Suite 4B, New York, NY 10021',
+                medical_history: 'Diagnosed with mild seasonal asthma in 2021. Well-controlled with rescue inhaler. Routine wellness parameters normal.',
+                allergies: 'Penicillin (Severe: Anaphylaxis/Urticaria), Pollen (Mild)',
+                lifestyle: 'Non-smoker, Yoga 3x weekly, 8 hrs sleep, Hydrated',
+                surgeries: 'None reported',
+                family_history: 'Maternal Grandmother: Hypertension; Father: Healthy',
                 vaccinations: 'COVID-19 Bivalent (2024), Tdap Booster (2022), Influenza (Annual)'
             };
         }

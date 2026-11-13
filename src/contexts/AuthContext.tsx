@@ -42,8 +42,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             } else {
                 const demoUser: User = {
                     id: 1,
-                    email: 'alex.johnson@medicare.org',
-                    full_name: 'Alex Johnson',
+                    email: 'yoshitha@medicare.org',
+                    full_name: 'Yoshitha',
                     role: 'patient'
                 };
                 setUser(demoUser);
@@ -87,8 +87,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             const token = 'demo_session_token_' + Date.now();
             const demoUser: User = {
                 id: 1,
-                email: email || 'patient@medicare.org',
-                full_name: email.split('@')[0].replace('.', ' ').toUpperCase() || 'Alex Johnson',
+                email: email || 'yoshitha@medicare.org',
+                full_name: email && !email.includes('alex') ? email.split('@')[0].replace('.', ' ').toUpperCase() : 'Yoshitha',
                 role: email.includes('doc') ? 'doctor' : 'patient'
             };
             localStorage.setItem('auth_token', token);
@@ -109,8 +109,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             role: 'doctor'
         } : {
             id: 1,
-            email: 'alex.johnson@medicare.org',
-            full_name: 'Alex Johnson',
+            email: 'yoshitha@medicare.org',
+            full_name: 'Yoshitha',
             role: 'patient'
         };
         localStorage.setItem('auth_token', token);

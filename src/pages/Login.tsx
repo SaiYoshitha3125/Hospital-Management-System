@@ -115,7 +115,7 @@ const Login: React.FC = () => {
                             onClick={() => handleDemoLogin('patient')}
                             className="rounded-xl h-10 text-sm font-semibold border-2 hover:border-primary hover:bg-primary/5"
                         >
-                            👤 Patient Demo
+                            👤 Patient Demo (Yoshitha)
                         </Button>
                         <Button
                             variant="outline"

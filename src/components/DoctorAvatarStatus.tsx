@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import doctorHeroImage from '@/assets/doctor-hero.png';
+import doctorHeroImage from '@/assets/yoshitha-avatar.svg';
 import DoctorWhisper from './DoctorWhisper';
 import HeartbeatIndicator from './HeartbeatIndicator';
 import ConsultationMeter from './ConsultationMeter';

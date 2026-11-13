@@ -12,6 +12,7 @@ import { MINOR_PROBLEM_CATEGORIES, HOSPITAL_DOCTORS, type MinorProblemCategory }
 import { consultationApi } from '@/lib/api';
 import { toast } from 'sonner';
 import { useAuth } from '@/contexts/AuthContext';
+import yoshithaAvatar from '@/assets/yoshitha-avatar.svg';
 
 const categoryIcons: Record<string, React.ComponentType<any>> = {
   Thermometer, Brain, Flame, Pill, Eye, Sparkles,
@@ -499,15 +500,20 @@ const VCAppointment: React.FC = () => {
           </div>
 
           {/* Patient self-view */}
-          <div className="relative h-32 w-48 self-end rounded-xl overflow-hidden bg-slate-700 flex items-center justify-center border-2 border-slate-600">
-            <div className="text-center">
-              <div className="w-12 h-12 rounded-full bg-sky-600 flex items-center justify-center mx-auto mb-1">
-                <span className="text-lg font-bold">{(user?.full_name || 'P')[0]}</span>
+          <div className="relative h-32 w-48 self-end rounded-2xl overflow-hidden bg-slate-800 flex items-center justify-center border-2 border-slate-600 shadow-xl">
+            <div className="text-center flex flex-col items-center">
+              <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-sky-400/60 shadow-md mb-1 bg-sky-950/40">
+                <img
+                  src={yoshithaAvatar}
+                  alt="Yoshitha"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <p className="text-xs text-slate-300">{user?.full_name || 'You'}</p>
+              <p className="text-xs font-semibold text-slate-200">{user?.full_name || 'Yoshitha'}</p>
             </div>
-            <div className="absolute top-2 right-2 flex items-center gap-1 bg-black/50 rounded px-1.5 py-0.5">
-              <Camera className="h-3 w-3" />
+            <div className="absolute top-2 right-2 flex items-center gap-1 bg-black/60 backdrop-blur-sm rounded-md px-1.5 py-0.5 text-[10px] text-green-400">
+              <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+              <Camera className="h-2.5 w-2.5 ml-0.5" />
             </div>
           </div>
 

@@ -60,7 +60,7 @@ const Appointments: React.FC = () => {
 
   // In-clinic & scheduled appointment form data
   const [formData, setFormData] = useState({
-    name: user?.full_name || '',
+    name: user?.full_name || 'Yoshitha',
     phone: '',
     doctor: '',
     date: new Date().toISOString().split('T')[0],
@@ -155,7 +155,7 @@ const Appointments: React.FC = () => {
 
   const handleReset = () => {
     setFormData({
-      name: user?.full_name || '',
+      name: user?.full_name || 'Yoshitha',
       phone: '',
       doctor: doctorsList[0]?.full_name || doctorsList[0]?.name || '',
       date: new Date().toISOString().split('T')[0],
